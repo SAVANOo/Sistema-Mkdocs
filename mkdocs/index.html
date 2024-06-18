@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>Mkdocs - Documentação do Sistema</title>
+
+  <!-- Page description -->
+  
+
+  <!-- Redirect -->
+  
+
+  <!-- Page author -->
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/bundle.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
+</head>
+
+<body>
+<input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
+<div class="app-body">
+  <!-- KPN STYLE Beginning -->
+  <div class="app-layout ">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
+      </a>
+      <div class="top-bar__title">Documentação do Sistema</div>
+      <ul class="top-bar__menu">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+          <li class="top-bar__item">
+
+            <span role="search" id="search-input-wrapper">
+              <form action="../search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
+              </form>
+            </span >
+          </li>
+        <!--
+          Versioning support
+        -->
+        
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          
+        </li>
+
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">Documentação do Sistema</a>
+        <!--
+          Versioning support
+        -->
+        
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+          <!--
+
+-->
+
+<li>
+  <a href=".." class="side-bar__link ">
+    Administração de Empresas de TI com GLPI e MkDocs
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../glpi/" class="side-bar__link ">
+    Glpi
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    Mkdocs
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar">
+        <div class="title-bar__title">Mkdocs</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs">
+        <h4>Table of contents</h4>
+        <ul>
+        
+          
+            <li><a class="a" href="#mkdocs">MkDocs</a></li>
+            
+          
+        
+          
+            
+                <li><a class="a" href="#principais-funcionalidades-do-mkdocs">Principais Funcionalidades do MkDocs</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#instalacao-do-python">Instalação do Python</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#instalacao-do-mkdocs">Instalação do MkDocs</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#entendendo-sobre-criacao-de-documentacao-com-o-mkdocs">Entendendo sobre criação de documentação com o MkDocs</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#configuracao-de-temas">Configuração de Temas</a></li>
+                
+            
+          
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          <div class="card">
+            <div class="card__body">
+
+              
+              <h3 id="mkdocs">MkDocs</h3>
+<h1 id="o-que-e-o-mkdocs">O que é o MkDocs?</h1>
+<p><a href="https://www.mkdocs.org/"><strong>MkDocs</strong></a> é uma ferramenta para documentação estática que converte arquivos Markdown (.md) em um site estático com as informações inseridas. Ele é fácil de configurar e utilizar, oferecendo uma maneira rápida e eficiente de criar fichas técnicas para seus projetos e facilitando todo o processo de documentação das empresas.</p>
+<h2 id="principais-funcionalidades-do-mkdocs">Principais Funcionalidades do MkDocs</h2>
+<ul>
+<li>Conversão de arquivos Markdown para Sites</li>
+<li>Navegação aprimorada feita em forma de arvore</li>
+<li>Ferramenta de busca fácil</li>
+<li>Inúmeros temas que podem ser baixados pela internet </li>
+</ul>
+<h3 id="instalacao-do-python">Instalação do Python</h3>
+<ol>
+<li>
+<p>Acesse o site da <a href="https://www.python.org/">Linguagem de Programação Python</a> que é a linguagem que roda o mkdocs e baixe a versão mais recente</p>
+</li>
+<li>
+<p>Instale e certifique-se durante a instalação de que a opção <code>Add Python to PATH</code> esteja marcado para setar a variável de ambiente do python correntamente</p>
+</li>
+</ol>
+<h3 id="instalacao-do-mkdocs">Instalação do MkDocs</h3>
+<p>No seu terminal:
+1. Baixe o MkDocs com o pip (gerenciador de pacotes do python) : <code>pip install mkdocs</code></p>
+<ol>
+<li>
+<p>Navegue até a pasta que deseje criar o projeto com MkDocs (cd 'nome da pasta')</p>
+</li>
+<li>
+<p>Crie um projeto MkDocs e entre para dentro da pasta</p>
+<pre><code>mkdocs new 'nome-do-projeto' 
+cd 'nome-do-projeto'
+</code></pre>
+</li>
+<li>
+<p>Faça o build do seu projeto MkDocs</p>
+<pre><code>mkdocs build
+</code></pre>
+</li>
+<li>
+<p>Rode o servidor MkDocs</p>
+<pre><code>mkdocs serve
+</code></pre>
+</li>
+</ol>
+<h3 id="entendendo-sobre-criacao-de-documentacao-com-o-mkdocs">Entendendo sobre criação de documentação com o MkDocs</h3>
+<p>Primeiramente deve-se entender que a build do mkdocs converte arquivos .md em arquivos html e possui um tema padrão que pode ser alterado futuramente.</p>
+<p>Com isso em mente devemos colocar todos os nossos arquivos de markdown dentro do diretório docs</p>
+<p>Devemos formatar os arquivos seguindo as convenções que possuem, <a href="https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open">Documentação de Ajuda com Markdown</a></p>
+<h3 id="configuracao-de-temas">Configuração de Temas</h3>
+<p>MkDocs possui várias possibilidades de temas e assim possui várias formas de instalação também, segue o tutorial de como instalar o tema utilizado nesse projeto : </p>
+<ol>
+<li>
+<p>Baixe o tema com o pip </p>
+<pre><code>pip install mkdocs-kpn
+</code></pre>
+</li>
+<li>
+<p>Atualize o arquivo mkdocs.yml na raiz do seu projeto configurando corretamente o tema (Muito cuidado com a identação do seu arquivo)</p>
+<pre><code>theme:
+  name: 'kpn'
+</code></pre>
+</li>
+</ol>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              <a class="footer__link padding-top-0 navigation-prev"
+                href="../glpi/"
+                title="Glpi">
+                &#8592; Previous Page
+              </a>
+            
+            
+            
+                Next Page &#8594;
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : 1.6.0
+  Docs Build Date UTC : 2024-06-18 02:56:28.412777+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/highlight.min.js"></script>
+  <script src="../js/languages/groovy.min.js"></script>
+  <script src="../js/languages/asciidoc.min.js"></script>
+  <script src="../js/languages/nix.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script async src="../js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="../search/main.js"></script>
+  
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
+</div>
+</body>
+</html>
